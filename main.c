@@ -49,7 +49,20 @@ char** getTokens(char* line) {
 	return tokens;
 }
 
+int make_syscall(char** tokens) {
+
+}
+
 int execute(char** tokens) {
+
+	printf("CMD: %s\nArgs:", *tokens);
+	char** tmp = tokens + 1;
+	while(*tmp != NULL) {
+		printf(" %s", *tmp);	
+		tmp++;
+	}
+	printf("\n");
+
 	return 0;
 }
 
